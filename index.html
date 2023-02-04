@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Tourist Destination Recommendation System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-      /* Add some custom font */
-      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
       body {
-        font-family: "Nunito", sans-serif;
-        background-color: #FCF7F8;
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
       }
-      /* Update the header and footer colors */
-      header,
-      footer {
-        background-color: #CED3DC;
-        height: 60px;
+      
+      .header {
+        background-color: #2F243A;
+        color: #FCF7F8;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        height: 70px;
       }
-      header {
-        position: fixed;
-        width: 100%;
-        top: 0;
+      
+      .header h1 {
+        margin: 0;
       }
-      footer {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
+      
+      .main-section {
+        display: flex;
+        height: calc(100vh - 140px);
       }
-      /* Add a little more spacing to the text */
-      h1 {
-        font-size: 36px;
-        color: #2F243A;
-        margin: 20px 0;
-        text-align: center;
-      }
-      /* Center the image on the page */
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
-        border: 10px solid #C33149;
-      }
-      /* Add some padding to the main content section */
-      main {
+      
+      .navigation {
+        background-color: #478978;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
       }
-      /* Add a link to the project */
-      a {
-        display: block;
+      
+      .navigation a {
+        color: #FCF7F8;
+        text-decoration: none;
+        margin: 10px 0;
         font-size: 18px;
-        color: #478978;
-        text-align: center;
-        margin: 20px 0;
+      }
+      
+      .navigation img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+      }
+      
+      .projects {
+        background-color: #FCF7F8;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .projects h2 {
+        margin: 0;
+        color: #C33149;
+      }
+      
+      .footer {
+        background-color: #CED3DC;
+        color: #2F243A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+      }
+      
+      .footer p {
+        margin: 0;
       }
     </style>
+    <title>Tourist Destination Recommendation System</title>
   </head>
   <body>
-    <header>
-      <h1>Programming Portfolio - Jason Penn</h1>
-    </header>
-    <main>
-      <a href="https://github.com/user/tourism-recommendation-system">
-        <img src="https://via.placeholder.com/500x300" alt="Tourist Destination Recommendation System">
-        <h2>Tourist Destination Recommendation System</h2>
-      </a>
-    </main>
-    <footer>
-      <p>&copy;2023 Tourist Destination Recommendation System</p>
-    </footer>
-  </body>
-</html>
+    <div class="header">
+      <h1>Tourist Destination Recommendation System</h1>
+    </div>
+    <div class="main-section">
+      <div class="navigation">
+        <a href="https://linkedin.com/in/your-linkedin-profile">
+          <img src="https://icon-library.com/images/linkedin-icon-png/linkedin-icon-png-29.jpg" alt="LinkedIn Icon">
+          LinkedIn
+        </a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="index.html">Home</a>
+      </div>
