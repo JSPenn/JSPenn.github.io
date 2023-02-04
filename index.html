@@ -8,6 +8,9 @@
     /* Add warm neutral colors */
     body {
       background-color: #F9A42B;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background-color: #FFA07A;
@@ -19,6 +22,9 @@
       color: #fff;
       padding: 10px;
       text-align: center;
+    }
+    .main-content {
+      flex: 1;
     }
 
     /* Improve text formatting */
@@ -56,9 +62,11 @@
   <header>
     <h1>Tourist Destination Recommendation System</h1>
   </header>
-  <div class="project-card">
-    <img src="https://via.placeholder.com/500x300" alt="Tourist Destination Recommendation System">
-    <h2>Tourist Destination Recommendation System</h2>
+  <div class="main-content">
+    <div class="project-card">
+      <img src="https://via.placeholder.com/500x300" alt="Tourist Destination Recommendation System">
+      <h2>Tourist Destination Recommendation System</h2>
+    </div>
   </div>
   <footer>
     <p>Copyright &copy; 2023. All rights reserved.</p>
